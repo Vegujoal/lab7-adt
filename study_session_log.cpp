@@ -38,16 +38,32 @@ private:
     // ===== Resolve these TODOs later (Part D) =====
 
     // TODO (Part D): Add a fixed capacity constant of four study sessions.
+    static const int MAX_SESSIONS = 4;
+
     // TODO (Part D): Add an int array named sessionMinutes for the stored session durations.
+    int sessionMinutes[MAX_SESSIONS];
+    
     // TODO (Part D): Add an int that tracks how many study sessions are stored.
+    int numSessions;
 
 public:
     // TODO (Part D): Write a constructor that creates an empty log.
+    StudySessionLog();
+
     // TODO (Part D): Write addSession. It receives minutes and reports whether the session was stored.
+    bool addSession(int minutes);
+
     // TODO (Part D): Write totalMinutes as a const member function.
+    int totalMinutes() const;
+
     // TODO (Part D): Write longestSession as a const member function.
+    int longestSession() const;
+
     // TODO (Part D): Write size as a const member function.
+    int size() const;
+
     // TODO (Part D): Write isEmpty as a const member function.
+    bool isEmpty() const;
 };
 
 int main()
