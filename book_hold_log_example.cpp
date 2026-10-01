@@ -6,6 +6,19 @@
  * Due date: [Tuesday, October 1, 2026]
  */
 
+/*
+ *BookHoldLog ADT
+ * Data:
+ * A sequence of up to four book hold IDs
+    *anfidsudgfmsh oa quie ahf asu
+ *
+ * Operations:
+ * addHold(id): Adds one book hold ID when space remains; returns whether it was added.
+ * contains(id): Reports whether an equal book hold ID is stored.
+ * size(): Returns the number of stored hold IDs.
+ * isEmpty(): Reports whether no hold IDs are stored.
+ */
+
 #include <iostream>
 #include <string>
 using namespace std;
@@ -90,15 +103,3 @@ cout << "Contains BK-310: " << holds.contains("BK-310") << endl;
 
     return 0;
 }
-
-/*
- * Data:
- * A sequence of up to four book hold IDs
-    *anfidsudgfmsh oa quie ahf asu
- *
- * Operations:
- * addHold(id): Adds one book hold ID when space remains; returns whether it was added.
- * contains(id): Reports whether an equal book hold ID is stored.
- * size(): Returns the number of stored hold IDs.
- * isEmpty(): Reports whether no hold IDs are stored.
- */
